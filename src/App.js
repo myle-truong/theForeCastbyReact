@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { queryAllByAltText } from '@testing-library/react';
+
+const api = {
+  key: '491f384e4afff1ef28b07ac92c74a218',
+  base: 'https://api.openweathermap.org/data/2.5/'
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app warm">
+      <main>
+        <div className="searchbox">
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="searching"
+            // onChange={e => setQuery(e.target.value)}
+            // value={queryAllByAltText}
+            // onKeyPress={search}
+          />
+        </div>
+      </main>
     </div>
   );
 }
