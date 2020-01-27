@@ -3,8 +3,8 @@ import './App.css';
 import { queryAllByAltText } from '@testing-library/react';
 
 const api = {
-  key: '491f384e4afff1ef28b07ac92c74a218',
-  base: 'https://api.openweathermap.org/data/2.5/'
+  key: ,
+  base: 
 };
 
 function App() {
